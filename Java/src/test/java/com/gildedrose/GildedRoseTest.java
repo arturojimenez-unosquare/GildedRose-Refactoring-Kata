@@ -2,7 +2,7 @@ package com.gildedrose;
 
 import org.junit.jupiter.api.Test;
 
-import static com.gildedrose.ItemTestHelper.assertItemEquals;
+import static com.gildedrose.TestHelper.assertItemEquals;
 
 
 

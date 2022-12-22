@@ -2,7 +2,7 @@ package com.gildedrose;
 
 import org.junit.Test;
 
-import static com.gildedrose.ItemTestHelper.assertItemEquals;
+import static com.gildedrose.TestHelper.assertItemEquals;
 
 public class AgedBrieTest {
 
