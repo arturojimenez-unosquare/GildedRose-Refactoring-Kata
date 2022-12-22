@@ -1,5 +1,9 @@
 package com.gildedrose;
 
+/**
+ * Item Class with their attributes.
+ * Attributes: name, sellin, quality
+ */
 public class Item {
 
     public String name;

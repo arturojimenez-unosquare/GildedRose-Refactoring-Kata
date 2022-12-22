@@ -8,7 +8,17 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 import static java.lang.String.format;
+
+/**
+ * TextTestFixture Class that validates the expected information against the information that is created in the unit tests
+ */
 public class TextTestFixture {
+
+    /**
+     * Method that compares the file "file.txt" found in the path: resources against
+     * the information that is being created
+     * @throws IOException
+     */
     @Test
     public void checkAllFile() throws IOException {
         String file = new String(Files.readAllBytes(Paths.get("src/test/resources/file.txt")));
@@ -21,11 +31,20 @@ public class TextTestFixture {
     }
 
 
+    /**
+     * Method that writes the file
+     * @param args
+     * @throws IOException
+     */
     public static void main(String[] args) throws IOException {
         StringBuilder builder = build();
         Files.write(Paths.get("src/test/resources/file.txt"), builder.toString().getBytes());
     }
 
+    /**
+     * method that creates a file with sales for a month
+     * @return
+     */
     private static StringBuilder build() {
         Item[] items = new Item[]{
             new Item("+5 Dexterity Vest", 10, 20),
